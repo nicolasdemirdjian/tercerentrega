@@ -1,0 +1,3 @@
+
+yo: en contacto que solo se puede elegir masc y fem, rellenar página clientes y hacer responsive para celular (con boton)
+ver sticky y footer centrado

@@ -1,0 +1,337 @@
+/*------------------------- Reset ----------------------------*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Playfair Display', serif;
+    background-image: url(https://http2.mlstatic.com/D_NQ_NP_881541-MLU46792563088_072021-O.jpg);
+
+}
+
+/*-------------------------- Navbar --------------------------*/
+
+
+.banner{
+    position: sticky;
+    top: 0px;
+    padding: 0px;
+    margin: 0px;
+    background-size: 490px;
+    background-image: url(https://http2.mlstatic.com/D_NQ_NP_881541-MLU46792563088_072021-O.jpg);
+    
+}
+.encabezado {
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    text-align: left;
+    font-family: 'Akshar', sans-serif;
+    background-image: url(https://w0.peakpx.com/wallpaper/878/729/HD-wallpaper-bricks-wall-construction-pattern-abstract.jpg);
+    padding: 70px;
+
+}
+
+.menu{
+    display: flex;
+    gap: 15px;
+    list-style: none;
+    font-size: large;
+    font-weight: bold;
+    padding: 30px;
+    margin-left: 700px;
+}
+
+
+nav li {
+    display: inline-block;
+    text-transform: uppercase;
+    color: black;
+
+}
+
+ul li a {
+    color: rgb(0, 0, 0);
+    letter-spacing: 1px;
+    text-decoration: none;
+
+}
+
+ul li a:hover {
+    color: rgb(255, 0, 0);
+    letter-spacing: 1px;
+}
+
+
+
+/*-------------------------- Formatos genéricos --------------------------*/
+
+
+
+.formato {
+    padding: 10px;
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+    font-family: 'Playfair Display', serif;
+    background-size: 490px;
+    background-image: url(https://http2.mlstatic.com/D_NQ_NP_881541-MLU46792563088_072021-O.jpg);
+    line-height: 150%;
+    }
+
+    
+
+  .interlineado {
+padding: 10px;
+margin-left: -10px;
+}
+
+
+  /*-------------------------- Inicio --------------------------*/
+
+  
+  p span {
+    font-size: 30px;
+    font-weight: bold;
+}
+  
+  .steelframing {
+    font-size: 19px;
+}
+  
+  .container{
+    width: 98%;
+    height: auto;
+    display: flex;
+    margin: auto;
+    border: solid 2px;
+    min-height: auto;
+
+}
+
+
+.container .container__box{
+    width: 450px;
+    height: 1000px;
+    overflow: hidden;
+    margin: 20px;
+}
+
+.container__title{
+    min-height: 60px;
+    color: rgb(80, 80, 73);
+    text-align: center;
+
+}
+
+.container__text{
+        min-height: 720px;
+        font-size: 1.2rem;
+    
+    }
+    
+
+.aqui {
+    color: rgb(132, 0, 255);
+}
+
+.aqui:hover {
+    text-decoration: underline;
+    color: rgb(255, 0, 0);
+}
+
+
+.img {
+    padding: 40px;
+    margin-top: -10%;
+}
+       
+/*-------------------------- Sobre nosotros --------------------------*/
+
+
+  .lista {
+    padding: 30px;
+}
+
+
+/*-------------------------- Obras --------------------------*/
+.segundogrid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: auto;
+}
+
+.segundogrid div {
+    border: 1px solid;
+    flex-grow: 1;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    text-transform: uppercase;
+    font-style: italic;
+    font-weight: bold;
+    padding: 10px;
+
+}
+
+
+.segundogrid p {
+    font-weight: bold;
+  }
+
+.imagenesobras {
+    height: 400px;
+    width: 417px;
+    align-items: center;
+    
+}
+
+/*-------------------------- Clientes --------------------------*/
+
+.footerclientes {
+margin-top: 53px;
+}
+
+.footercontacto {
+    height: 53px;
+    margin-left: -10px;
+    margin-right: -10px;
+
+}
+
+
+/*-------------------------- Contacto --------------------------*/
+
+
+.contacto h3 {
+    font-weight: bold;
+}
+
+
+/*-------------------------- Grid --------------------------*/
+    
+
+@media(max-width:768px){
+    .menu{
+        display: flex;
+        justify-content: center; 
+        font-size: 19px;
+
+    }
+
+        .container {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 10px;
+        justify-content: center;
+        text-align: center;
+        width: auto;
+
+    }
+
+    .container .container__text {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 10px;
+        min-height: 50px;
+        
+    }
+        .segundogrid{
+        display: grid;
+        grid-template-columns: repeat(1,100%);
+        grid-auto-rows: auto;
+    }
+        .container .container__box{
+            height: 900px;
+            min-height: 50px;
+
+        }
+
+        .container__title{
+            min-height: 40px;
+        }
+    
+     .footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-auto-rows: auto;
+        text-align: center;
+        gap: 1px;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+
+}
+
+}
+
+/*-------------------------- Footer --------------------------*/
+
+
+.footer{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    background-image: url(https://static.vecteezy.com/system/resources/thumbnails/006/788/849/small/construction-skyline-background-concept-modern-city-construction-buildings-illustration-of-construction-site-with-cranes-and-skyscraper-vector.jpg);
+    height: 120px;
+justify-content: center;
+}
+
+
+.footer__item a{
+    padding: 10px;
+    text-decoration: none;
+    color: #000;
+    font-size: 1.2rem;
+   
+    
+}
+
+.footer__item a:hover{
+    color: rgb(255, 0, 0);
+}
+
+
+/* ---------------------Animaciones -------------------------*/
+
+.movimiento {
+    transition: transform .3s;
+    }
+    
+    
+    .movimiento:hover {
+    transform: translate(0, 8px);
+    }
+   
+    
+    .img {
+    border-radius: 15px;
+    transition: all .5s;
+    }
+    
+    .img:hover {
+        transform: scale(1.2);
+        z-index: 2;
+        cursor: pointer;
+    }
+    
+    #input {
+      background-color: rgb(255, 255, 255);
+      transition: all 5s
+    }
+    
+    #input:focus {
+        background-color: rgb(64, 166, 192);
+    
+      }
+
+      .imagenesobras {
+        border-radius: 15px;
+        transition: all .5s;
+            }
+
+    .imagenesobras:hover {
+        transform: scale(1.2);
+        z-index: 2;
+        cursor: pointer;
+                }
+      
