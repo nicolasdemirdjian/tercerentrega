@@ -58,6 +58,18 @@ ul li a:hover {
 }
 
 /*-------------------------- Formatos genéricos --------------------------*/
+.menuhamburguesa {
+  width: 40px;
+  height: 55px;
+  margin-top: 15px;
+  cursor: pointer;
+  display: none;
+}
+
+#check {
+  display: none;
+}
+
 .formato {
   padding: 10px;
   color: black;
@@ -217,16 +229,37 @@ p span {
   }
 }
 
-@media (max-width: 480px) {
-  .formato {
-    padding: 10px;
-    color: black;
-    font-size: 18px;
-    font-family: 'Playfair Display', serif;
-    background-size: 490px;
-    background-image: url(https://http2.mlstatic.com/D_NQ_NP_881541-MLU46792563088_072021-O.jpg);
-    line-height: 150%;
+@media (max-width: 500px) {
+  .checkbtn {
+    display: block;
   }
+  .menuhamburguesa {
+    display: block;
+  }
+  ul {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 170px;
+    left: -150%;
+    text-align: center;
+    transition: all .5s;
+  }
+  nav ul li {
+    display: block;
+    line-height: 20px;
+  }
+  nav ul li a {
+    font-size: 10px;
+  }
+  li a:hover, li a.active {
+    background: none;
+    color: #0026ff;
+  }
+  #check:checked ~ ul{
+    left: 0;
+  }
+
 }
 
 /*-------------------------- Footer --------------------------*/
