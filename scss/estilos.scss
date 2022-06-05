@@ -27,6 +27,7 @@
     font-family: 'Akshar', sans-serif;
     background-image: url(https://w0.peakpx.com/wallpaper/878/729/HD-wallpaper-bricks-wall-construction-pattern-abstract.jpg);
     padding: 70px;
+    width: 100%;
   }
   
   .menu {
@@ -37,6 +38,10 @@
     font-weight: bold;
     padding: 30px;
     justify-content: right;
+  }
+
+  #menucliente  {
+    margin-right:17px;
   }
   
   nav li {
@@ -58,17 +63,13 @@
   
   /*-------------------------- Formatos genéricos --------------------------*/
   
-  .menuhamburguesa {
-  width: 40px;
-  height: 55px;
- margin-top: 15px;
-cursor: pointer;
-display: none;
+
+  
+  .icono-menu img {
+  display: none;
   }
 
-  #check {
-display: none;
-  }
+
 
   .formato {
     padding: 10px;
@@ -91,8 +92,14 @@ display: none;
     font-weight: bold;
   }
   
-  .steelframing {
-    font-size: 19px;
+  h3 {
+    font-size: 23px;
+    padding: 5px;
+    margin-left: -6px;
+   }
+
+  .span {
+   font-size: 20px;
   }
   
   .container {
@@ -173,6 +180,10 @@ display: none;
   .footerclientes {
     margin-top: 53px;
   }
+
+  #footerclientes {
+    margin-right: 17px;
+  }
   
   .footercontacto {
     height: 53px;
@@ -187,6 +198,16 @@ display: none;
   
   /*-------------------------- Grid --------------------------*/
   @media (max-width: 768px) {
+
+    body {
+      background-size: 300px;
+            }  
+
+    .formato {
+      background-size: 300px;
+    } 
+
+
     .menu {
       display: flex;
       justify-content: center;
@@ -227,46 +248,106 @@ display: none;
       flex-wrap: wrap;
       justify-content: space-evenly;
     }
+
+    #footerclientes {
+      margin-right: 0px;
+    }
+    
   }
   
   @media (max-width: 500px) {
 
-    .checkbtn{
-      display: block;
-          }
-
-    .menuhamburguesa {
-      display: block;
-    }
-    nav ul {
-    position: fixed; 
-    width: 100%;
-    height: 100vh;
-    top: 170px;
-    left: -150%;
-    text-align: center;
-      transition: all .5s;
-     }
-     nav ul li {
-     display: block;
-      margin: 50px 0;
-      line-height: 30px;
-  }
   nav ul li a {
-   font-size: 20px;
- }
+   font-size: 11px;
+             } 
+      
+  .encabezado {
+    color: white;
+    font-size: 20px;
+    text-align: left;
+    font-family: 'Akshar', sans-serif;
+    width: 480px;
 
- li a:hover, li a.active{
-background: none;
-color: #0026ff;
-}
-
-
-#check:checked ∼ ul {
-  left: 0;
-    }
+  }
   
-}
+  .banner {
+    font-size: 15px;
+    width: 480px;
+      
+             } 
+
+    body {
+    width: -290px; 
+    background-size: 300px;
+     margin-right: 20px;
+          }  
+
+    .formato {
+      width: -290px; 
+      background-size: 300px;
+       margin-right: 20px;
+       font-size: 15px;
+         
+                 } 
+
+  
+
+     .container {
+      display: flex;
+      flex-wrap: wrap;
+      margin: 10px;
+      justify-content: center;
+      text-align: center;
+      width: auto;
+      font-size: 10px;
+    }
+    .container .container__text {
+      display: flex;
+      flex-wrap: wrap;
+      margin: 10px;
+      min-height: 50px;
+      font-size: 15px;
+      width: auto;
+
+    }
+
+    .segundogrid {
+      display: grid;
+      grid-template-columns: repeat(1, 100%);
+      grid-auto-rows: auto;
+    }
+    .container .container__box {
+      height: 650px;
+      min-height: 50px;
+    }
+    .container__title {
+      min-height: 40px;
+    }
+
+       .imagenesobras{
+        width: 397px;       
+        }
+
+        #menucliente{
+    margin-right: auto;
+    width: auto;
+        }
+  
+  
+     .footer {
+       width: 480px;
+     }
+  
+  
+     .footer .footer__item a {
+       font-size: 15px;
+       } 
+  
+  
+     }
+
+
+
   /*-------------------------- Footer --------------------------*/
   .footer {
     display: flex;
