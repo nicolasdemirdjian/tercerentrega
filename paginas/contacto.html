@@ -15,6 +15,10 @@
 
         <h1 class="encabezado"> MEGA CONSTRUCCIÓN</h1>
         <nav>
+            <input type="checkbox" id="toggle" class="toggle">
+            <label for="toggle" class="icon">
+              <span class="hamburguer"></span>
+            </label>   
             <ul class="menu">
                 <li class="movimiento"><a href="../index.html">Inicio</a></li>
                 <li class="movimiento"><a href="sobrenosotros.html">Sobre nosotros</a></li>
@@ -32,25 +36,16 @@
         <h3>Solicitá tu cotización llenando los siguientes datos</h3>
         <form>
             <label>Nombre</label>
-            <input type="text" placeholder="Escribí tu nombre" name="Nombre" required id="input"><br>
-
+            <input type="text" placeholder="Escribí tu nombre" name="Nombre" required id="input" class="input"><br>
             <label>Email</label>
-            <input type="email" placeholder="Escribí tu email" name="Email" required id="input"><br>
-
-            <label>Contraseña</label>
-            <input type="password" placeholder="Escribí tu contraseña" name="Contraseña" required id="input"><br>
-
-
-            <br>
+            <input type="email" placeholder="Escribí tu email" name="Email" required id="input" class="inputdos"><br>
             <label>Sexo</label>
             <label>Masculino</label>
             <input type="radio" name="Masculino" value="Masculino">
             <label>Femenino</label>
             <input type="radio" name="Femenino" value="Femenino"><br>
-            <br>
             <label>Mensaje</label>
-            <textarea placeholder="Escribí un mensaje" id="input"></textarea><br>
-            <br>
+            <textarea placeholder="Escribí un mensaje" id="input" class="inputtres"></textarea><br>
             <input type="submit" value="ENVIAR">
         </form>
 
